@@ -1,5 +1,8 @@
 package ar.edu.unq.cpi.personajesAnimales.pocimas;
 
+import ar.edu.unq.cpi.personajesAnimales.animales.Animal;
+import ar.edu.unq.cpi.personajesAnimales.personajes.Personaje;
+
 public class PocimaAzul extends Pocima {
 	private int resistenciaAnimalPropio;
 	private int resistenciaAnimalAjeno;
@@ -23,5 +26,15 @@ public class PocimaAzul extends Pocima {
 	public PocimaAzul(int resistenciaAnimalPropio, int resistenciaAnimalAjeno) {
 		this.resistenciaAnimalPropio = resistenciaAnimalPropio;
 		this.resistenciaAnimalAjeno = resistenciaAnimalAjeno;
+	}
+
+	@Override
+	public TipoPocima getTipo() {
+		return TipoPocima.AZUL;
+	}
+
+	@Override
+	public void aplicar(Animal animal, Personaje personaje) {
+		animal.recibirPocimaAzul(this, personaje);		
 	}
 }

@@ -1,6 +1,6 @@
 package ar.edu.unq.cpi.personajesAnimales.castillos;
 
-import ar.edu.unq.cpi.personajesAnimales.Personaje;
+import ar.edu.unq.cpi.personajesAnimales.personajes.Personaje;
 import ar.edu.unq.cpi.personajesAnimales.pocimas.Pocima;
 import ar.edu.unq.cpi.personajesAnimales.pocimas.PocimaRoja;
 

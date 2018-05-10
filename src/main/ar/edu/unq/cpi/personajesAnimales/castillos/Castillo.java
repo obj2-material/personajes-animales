@@ -3,7 +3,7 @@ package ar.edu.unq.cpi.personajesAnimales.castillos;
 import java.util.HashSet;
 import java.util.Set;
 
-import ar.edu.unq.cpi.personajesAnimales.Personaje;
+import ar.edu.unq.cpi.personajesAnimales.personajes.Personaje;
 import ar.edu.unq.cpi.personajesAnimales.pocimas.Pocima;
 
 public abstract class Castillo {

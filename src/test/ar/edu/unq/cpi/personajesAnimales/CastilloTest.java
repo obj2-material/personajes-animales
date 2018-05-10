@@ -8,6 +8,7 @@ import org.junit.Test;
 import ar.edu.unq.cpi.personajesAnimales.castillos.Castillo;
 import ar.edu.unq.cpi.personajesAnimales.castillos.CastilloAgricola;
 import ar.edu.unq.cpi.personajesAnimales.castillos.CastilloMaligno;
+import ar.edu.unq.cpi.personajesAnimales.personajes.Personaje;
 import ar.edu.unq.cpi.personajesAnimales.pocimas.Pocima;
 import ar.edu.unq.cpi.personajesAnimales.pocimas.PocimaAzul;
 
