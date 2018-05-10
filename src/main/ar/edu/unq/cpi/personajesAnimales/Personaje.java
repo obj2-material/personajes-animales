@@ -27,11 +27,15 @@ public class Personaje {
 		this.pocimas = pocimas;
 	}
 
-	public void ganarSabiduria() {
-		sabiduria = Math.min(sabiduria + 2, SABIDURIA_MAXIMA);
+	public void ganarSabiduria(int cantidad) {
+		sabiduria = Math.min(sabiduria + cantidad, SABIDURIA_MAXIMA);
 	}
 
 	public void agregarPocima(Pocima pocima) {
 		this.pocimas.add(pocima);
+	}
+
+	public void perderSabiduria(int cantidad) {
+		sabiduria = Math.max(sabiduria - cantidad, 0);
 	}
 }

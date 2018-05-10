@@ -30,10 +30,14 @@ public abstract class Castillo {
 		if (this.puedeProducirPocima()) {
 			personaje.agregarPocima(this.crearPocima(personaje));
 		}
-		personaje.ganarSabiduria();
+		this.modificarSabiduria(personaje);
 		this.recordarPaso(personaje);
 	}
 	
+	protected void modificarSabiduria(Personaje personaje) {
+		personaje.ganarSabiduria(2);
+	}
+
 	public void recargarCapacidadPocimas() {
 		this.capacidadCreacionPocimas += 6;
 	}

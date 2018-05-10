@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import ar.edu.unq.cpi.personajesAnimales.castillos.Castillo;
 import ar.edu.unq.cpi.personajesAnimales.castillos.CastilloAgricola;
+import ar.edu.unq.cpi.personajesAnimales.castillos.CastilloMaligno;
 import ar.edu.unq.cpi.personajesAnimales.pocimas.Pocima;
 import ar.edu.unq.cpi.personajesAnimales.pocimas.PocimaAzul;
 
@@ -60,5 +61,12 @@ public class CastilloTest {
 		castilloAgricola.registrarPaso(juana);
 		PocimaAzul pocimaAzul = (PocimaAzul) juana.getPocimas().get(0);
 		assertEquals(2, pocimaAzul.getResistenciaAnimalPropio());
+	}
+	
+	@Test
+	public void pasarPorCastilloMalignoDisminuyeSabiduria() {
+		juana.setSabiduria(9);
+		new CastilloMaligno().registrarPaso(juana);
+		assertEquals(4, juana.getSabiduria());
 	}
 }
